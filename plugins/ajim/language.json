@@ -1,0 +1,33 @@
+{
+  // english
+  eng: {
+    categories: [ 'meta', 'ajim' ],
+    strings: {
+      meta: {
+        ajim: 'AjIM plugin'
+      },
+      ajim: {
+        msg_loading: 'Loading...',
+        lbl_name: 'Name:',
+        lbl_website: 'URL:',
+        btn_submit: 'Post',
+        msg_no_post: 'Posting is disabled.',
+        btn_edit: 'edit',
+        btn_delete: 'delete',
+        btn_save: 'save',
+        msg_no_posts: 'No posts.',
+        btn_mod: 'Moderation',
+        
+        err_generic_title: 'Shoutbox error',
+        err_bad_json: 'Invalid JSON response from server:',
+        err_post_denied: 'Access denied. Your post was not submitted.',
+        err_access_denied: 'You\'re not allowed to do that.',
+        err_no_post: 'Please enter a post.',
+        
+        perm_post: 'Post AjIM messages',
+        perm_edit: 'Edit own AjIM messages',
+        perm_mod: 'Moderate AjIM messages'
+      }
+    }
+  }
+}

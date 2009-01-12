@@ -1,0 +1,88 @@
+div.ajim_wrapper {
+  padding: 2px;
+  color: #000;
+}
+
+div.ajim_wrapper > div {
+  border-color: #000;
+  border-style: solid;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 75%;
+  padding: 3px;
+}
+
+div.ajim_messages {
+  border-width: 1px 1px 0 1px;
+  background-color: #fff;
+  height: 200px;
+  clip: rect(0px, auto, auto, 0px);
+  overflow: auto;
+}
+
+div.ajim_form {
+  border-width: 0 1px 1px 1px;
+}
+
+div.ajim_form input.ajim_field {
+  font-size: 100%;
+  width: 80%;
+}
+
+div.ajim_form textarea {
+  width: 93%;
+  font-size: 100%;
+}
+
+div.ajim_submit_wrap {
+  padding-top: 2px;
+  text-align: center;
+}
+
+div.ajim_submit_wrap input {
+  font-size: 100%;
+}
+
+span.ajim_noposts {
+  color: #a0a0a0;
+}
+
+div#ajim_error {
+  background-color: #ffd0d0;
+  color: #500000;
+}
+
+div.ajim_modbuttons {
+  float: right;
+}
+
+div.ajim_modbuttons a.ajim_btn_edit {
+  color: #30aa00;
+}
+
+div.ajim_modbuttons a.ajim_btn_delete {
+  color: #aa3000;
+}
+
+div.ajim_messagehead {
+  clear: both;
+  border-bottom: 1px solid #c8c8c8;
+  margin: 3px 0;
+}
+
+div.ajim_timestamp {
+  color: #aaaaaa;
+  font-style: italic;
+}
+
+div.ajim_message_inner p {
+  margin: 2px 0;
+}
+
+div#ajim_mod {
+  text-align: center;
+}
+
+a.ajim_modlink {
+  color: blue;
+  font-size: 87.5%;
+}
