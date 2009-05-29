@@ -81,6 +81,7 @@ function page_Special_AjimJson()
         while ( $row = $db->fetchrow() )
         {
           $row['rank_info'] = $session->get_user_rank($row['user_id']);
+          $row['rank_info']['rank_title'] = $lang->get($row['rank_info']['rank_title']);
           $row['message_html'] = RenderMan::render($row['message']);
           $row['human_time'] = enano_date('n/j, g:ia', $row['message_time']);
           $messages[] = $row;
@@ -118,6 +119,8 @@ function page_Special_AjimJson()
             'error' => $lang->get('ajim_err_no_post')
           ));
       }
+      
+      $content = RenderMan::preprocess_text($content, true, false);
       
       $now = time();
       $content_db = $db->escape($content);

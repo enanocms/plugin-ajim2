@@ -63,10 +63,14 @@ div.ajim_modbuttons a.ajim_btn_delete {
   color: #aa3000;
 }
 
-div.ajim_messagehead {
+div.ajim_messagehead, div.ajim_messagefoot {
   clear: both;
   border-bottom: 1px solid #c8c8c8;
   margin: 3px 0;
+}
+
+div.ajim_messagefoot {
+  border-bottom-color: #d8d8d8;
 }
 
 div.ajim_timestamp {

@@ -21,7 +21,7 @@ window.ajim_watch = function(immediate)
 window.ajim_send_request = function(request)
 {
   request = ajaxEscape(toJSONString(request));
-  ajaxPost(makeUrlNS('Special', 'AjimJson'), 'r=' + request, function()
+  ajaxPost(makeUrlNS('Special', 'AjimJson'), 'r=' + request, function(ajax)
     {
       if ( ajax.readyState == 4 && ajax.status == 200 )
       {
@@ -34,7 +34,7 @@ window.ajim_send_request = function(request)
         response = parseJSON(response);
         ajim_handle_response(response);
       }
-    });
+    }, true);
 }
 
 window.ajim_handle_invalid_json = function(response)
